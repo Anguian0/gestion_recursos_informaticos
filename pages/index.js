@@ -1,7 +1,9 @@
-import React from "react";
+import Login from "../components/login";
 
-function HomePage() {
-  return <div>Hola Mundo</div>;
+function Inicio() {
+  return (
+      <Login/>
+    )
 }
 
-export default HomePage;
+export default Inicio;
