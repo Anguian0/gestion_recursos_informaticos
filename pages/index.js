@@ -1,9 +1,16 @@
+import Head from "next/head";
 import Login from "../components/login";
 
-function Inicio() {
+export default function Inicio() {
   return (
-      <Login/>
-    )
-}
+    <div>
 
-export default Inicio;
+      <Head>
+        <title>Login - GRI</title>
+      </Head>
+
+      <Login />
+
+    </div>
+  )
+};

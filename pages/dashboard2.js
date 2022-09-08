@@ -1,11 +1,12 @@
 import Head from "next/head";
 import Sidebar from "../components/sidebar";
 import Cabecera from "../components/cabecera";
-import Contenido from "../components/contenido";
+import Contenido2 from "../components/contenido2";
 
-export default function Dashboard() {
+export default function Dashboard2() {
     return (
 
+        // Prueba
         <div>
             <Head>
                 <title>Dashboard</title>
@@ -33,8 +34,8 @@ export default function Dashboard() {
                     <Sidebar />
                 </div>
                 {/* Contenido */}
-                <div className="p-1 lg:p-6 font-bold z-0 w-screen h-screen lg:ml-64">
-                    <Contenido />
+                <div className="p-6 font-bold z-0 w-screen h-screen lg:ml-64">
+                    <Contenido2 />
                 </div>
             </div>
 
