@@ -12,7 +12,6 @@ export default function Dashboard2() {
                 <title>Dashboard</title>
                 {/* Flowbite es necesario para el Sidebar */}
                 <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
-                <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
             </Head>
 
             {/* Cabecera */}
