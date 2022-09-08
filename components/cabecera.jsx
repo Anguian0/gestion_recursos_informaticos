@@ -11,12 +11,6 @@ export default function Cabecera() {
                 <h2 className="text-[#DEDECA] drop-shadow-2xl text-md lg:text-sm xl:text-lg 2xl:text-xl font-bold pb-7 2xl:pb-5">Instituto Tecnólogico de Tuxtepec</h2>
             </div>
 
-            {/* Respaldo barra superior */}
-            {/* <div className="text-center text-black">
-                <h1 class="text-2xl font-bold pt-6">Gestión de Recursos Informaticos</h1>
-                <h2 class="text-xl font-bold pb-6">Instituto Tecnólogico de Tuxtepec</h2>
-            </div> */}
-
             <img src="/TecNM_logo.png" className="w-52 ml-10 pt-1 hidden lg:block xl:block 2xl:block" />
 
         </div>
