@@ -1,16 +1,11 @@
 import Link from "next/link";
-import Head from "next/head";
+import Script from "next/script";
 
 export default function SideBar() {
   return (
     <>
-      <Head>
-        {/* Flowbite es necesario para el Sidebar */}
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
-        />
-      </Head>
+
+      <Script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js" />
 
       {/* Sidebar */}
       <div id="mobile-menu-1" className="hidden lg:block bg-gray-100 rounded-br-lg">

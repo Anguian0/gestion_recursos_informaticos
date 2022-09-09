@@ -2,18 +2,17 @@ import Head from "next/head";
 import Sidebar from "../components/sidebar";
 import Cabecera from "../components/cabecera";
 import Contenido2 from "../components/contenido2";
+import Script from "next/script";
 
 export default function Dashboard2() {
     return (
-
-        // Prueba
-        <div>
+        <>
+            {/* Prueba */}
             <Head>
-                <title>Dashboard</title>
-                {/* Flowbite es necesario para el Sidebar */}
-                <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
-                
+                <title>Dashboard2</title>
             </Head>
+
+            <Script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js" />
 
             {/* Cabecera */}
             <div className="sticky top-0 z-20">
@@ -38,9 +37,6 @@ export default function Dashboard2() {
                     <Contenido2 />
                 </div>
             </div>
-
-
-
-        </div>
+        </>
     )
 };

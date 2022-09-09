@@ -3,10 +3,11 @@ import Image from "next/image";
 
 export default function Contenido() {
     return (
-        <div>
+        <>
             <div>
-                <h1 className="text-2xl px-6 pt-4 lg:px-6">SC1</h1>
+                <h1 className="text-2xl px-6 pt-4 lg:pt-1">SC1</h1>
             </div>
+
             <div className="grid grid-cols-1 m-6 gap-6">
 
                 <div className="flex flex-col items-center bg-slate-200 rounded-lg lg:flex-row">
@@ -82,6 +83,6 @@ export default function Contenido() {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
