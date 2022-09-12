@@ -4,7 +4,6 @@ import Script from "next/script";
 export default function SideBar() {
   return (
     <>
-
       <Script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js" />
 
       {/* Sidebar */}
