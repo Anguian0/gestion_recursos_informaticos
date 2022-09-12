@@ -12,7 +12,6 @@ export default function id() {
                 <title>Dashboard</title>
             </Head>
 
-
             {/* Cabecera */}
             <div className="sticky top-0 z-20">
                 <Cabecera />

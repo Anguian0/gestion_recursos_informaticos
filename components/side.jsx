@@ -8,7 +8,6 @@ export default function Side() {
       <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script> 
     </Head>
 
-
       {/* Sidebar */}
       <div id="mobile-menu-1" className="hidden lg:block">
         <div className="text-center bg-slate-200 p-6 pt-4 w-64 lg:m-6 border-2 border-slate-400 h-fit rounded-lg">
