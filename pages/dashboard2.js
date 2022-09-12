@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Sidebar from "../components/sidebar";
+import Side from "../components/side";
 import Cabecera from "../components/cabecera";
 import Contenido2 from "../components/contenido2";
 import Script from "next/script";
@@ -12,7 +12,6 @@ export default function Dashboard2() {
                 <title>Dashboard2</title>
             </Head>
 
-            <Script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js" />
 
             {/* Cabecera */}
             <div className="sticky top-0 z-20">
@@ -30,10 +29,10 @@ export default function Dashboard2() {
             {/* Sidebar */}
             <div className="flex">
                 <div className="lg:block absolute z-10 lg:fixed lg:top-22">
-                    <Sidebar />
+                    <Side />
                 </div>
                 {/* Contenido */}
-                <div className="p-6 font-bold z-0 w-screen h-screen lg:ml-64">
+                <div className="p-1 lg:p-6 font-bold z-0 w-screen h-screen lg:ml-64">
                     <Contenido2 />
                 </div>
             </div>

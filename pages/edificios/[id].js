@@ -1,9 +1,10 @@
 import Head from "next/head";
-import Side from "../components/side";
-import Cabecera from "../components/cabecera";
-import Contenido from "../components/contenido";
+import Side from "../../components/side";
+import Cabecera from "../../components/cabecera";
+import Contenido from "../../components/contenido";
+import Script from "next/script";
 
-export default function Dashboard() {
+export default function id() {
     return (
         <>
 

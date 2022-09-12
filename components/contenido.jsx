@@ -1,84 +1,54 @@
 import Link from "next/link";
-import Image from "next/image";
+import { useRouter } from "next/router";
 
 export default function Contenido() {
+
+        const ruta = useRouter();
+        const {id} = ruta.query;
+        console.log(id);
+
     return (
         <>
+
             <div>
-                <h1 className="text-2xl px-6 pt-4 lg:pt-1">SC1</h1>
+                <h1 className="border-2 border-slate-400 rounded-lg bg-slate-200 text-2xl p-2 mx-6 lg:mr-0 pt-1 text-center uppercase">Laboratorio {id}</h1>
             </div>
 
-            <div className="grid grid-cols-1 m-6 gap-6">
+            <div className="grid grid-cols-1 m-6 gap-6 lg:mr-0">
 
-                <div className="flex flex-col items-center bg-slate-200 rounded-lg lg:flex-row">
-                    <img src="/monitor.jpg" className="object-cover rounded-t-lg w-full h-full md:w-56 md:rounded-none md:rounded-l-lg" />
+                <div className="border-2 border-slate-400 flex flex-col items-center bg-slate-200 rounded-lg lg:flex-row">
+                    <img src="/monitor.jpg" className="border-b-2 lg:border-b-0 lg:border-r-2 border-slate-400 object-cover rounded-t-lg w-full h-full md:w-56 md:rounded-none md:rounded-l-lg" />
                     <div className="grid px-6 grid-cols-1 lg:grid-cols-2 my-6 gap-6 w-full">
-                        <p className="p-6 bg-gray-100 rounded-lg">
+                        <p className="border-2 border-slate-400 p-6 bg-gray-100 rounded-lg">
                             Nombre: Monitor
                         </p>
-                        <p className="p-6 bg-gray-100 rounded-lg">
+                        <p className="border-2 border-slate-400 p-6 bg-gray-100 rounded-lg">
                             Cantidad: 10
                         </p>
-                        <p className="p-6 bg-gray-100 rounded-lg">
+                        <p className="border-2 border-slate-400 p-6 bg-gray-100 rounded-lg">
                             Encargado: Julio Aguilar Carmona
                         </p>
-                        <Link href="dashboard2">
-                            <a className="p-6 bg-gray-100 rounded-lg">Ver</a>
+                        <Link href="/dashboard2">
+                            <a className="border-2 border-slate-400 p-6 bg-gray-100 rounded-lg">Ver</a>
                         </Link>
 
                     </div>
                 </div>
 
-                <div className="rounded-lg p-6 flex flex-col items-center lg:flex-row bg-slate-200">
-                    <Image className="rounded-lg" src="/mouse.webp" height={250} width={250} objectFit="cover" />
-                    <div className="grid grid-cols-1 lg:grid-cols-2 my-6 mb-0 lg:my-6 lg:ml-6 gap-6 w-full">
-                        <p className="p-6 bg-gray-100 rounded-lg">
+                <div className="border-2 border-slate-400 rounded-lg p-6 flex flex-col items-center lg:flex-row bg-slate-200">
+                    <img className="rounded-lg border-2 border-slate-400 object-cover lg:w-44 w-full " src="/mouse.webp"  />
+                    <div className="grid grid-cols-1 lg:grid-cols-2 my-6 mb-0 lg:my-0 lg:ml-6 gap-6 w-full">
+                        <p className="border-2 border-slate-400 p-6 bg-gray-100 rounded-lg">
                             Nombre: Monitor
                         </p>
-                        <p className="p-6 bg-gray-100 rounded-lg">
+                        <p className="border-2 border-slate-400 p-6 bg-gray-100 rounded-lg">
                             Cantidad: 10
                         </p>
-                        <p className="p-6 bg-gray-100 rounded-lg">
+                        <p className="border-2 border-slate-400 p-6 bg-gray-100 rounded-lg">
                             Encargado: Julio Aguilar Carmona
                         </p>
                         <Link href="dashboard2">
-                            <a className="p-6 bg-gray-100 rounded-lg">Ver</a>
-                        </Link>
-                    </div>
-                </div>
-
-                <div className="rounded-lg p-6 flex flex-col items-center lg:flex-row bg-slate-200">
-                    <Image className="rounded-lg" src="/teclado.webp" height={250} width={250} objectFit="cover" />
-                    <div className="grid grid-cols-1 lg:grid-cols-2 my-6 mb-0 lg:my-6 lg:ml-6 gap-6 w-full">
-                        <p className="p-6 bg-gray-100 rounded-lg">
-                            Nombre: Teclado
-                        </p>
-                        <p className="p-6 bg-gray-100 rounded-lg">
-                            Cantidad: 10
-                        </p>
-                        <p className="p-6 bg-gray-100 rounded-lg">
-                            Encargado: Julio Aguilar Carmona
-                        </p>
-                        <Link href="dashboard2">
-                            <a className="p-6 bg-gray-100 rounded-lg">Ver</a>
-                        </Link>
-                    </div>
-                </div>
-
-                <div className="rounded-lg p-6 flex flex-col mb-6 items-center lg:flex-row bg-slate-200">
-                    <Image className="rounded-lg" src="/monitor.jpg" height={250} width={250} objectFit="cover" />
-                    <div className="grid grid-cols-1 lg:grid-cols-2 my-6 mb-0 lg:my-6 lg:ml-6 gap-6 w-full">
-                        <p className="p-6 bg-gray-100 rounded-lg">
-                            Nombre: Monitor
-                        </p>
-                        <p className="p-6 bg-gray-100 rounded-lg">
-                            Cantidad: 10
-                        </p>
-                        <p className="p-6 bg-gray-100 rounded-lg">
-                            Encargado: Julio Aguilar Carmona
-                        </p>
-                        <Link href="dashboard2">
-                            <a className="p-6 bg-gray-100 rounded-lg">Ver</a>
+                            <a className="border-2 border-slate-400 p-6 bg-gray-100 rounded-lg">Ver</a>
                         </Link>
                     </div>
                 </div>
