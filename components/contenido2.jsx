@@ -9,6 +9,7 @@ export default function Contenido2() {
                 <h1 className="rounded-lg text-slate-900 bg-slate-300 text-xl uppercase p-2 mx-6 lg:mr-0 px-6 text-center mt-4 lg:mt-0">Laboratorio SC1</h1>
             </div>
 
+
             <div className="grid grid-cols-1 m-6 lg:mr-0 gap-6">
 
                 <div className=" flex flex-col items-center bg-slate-300 rounded-lg lg:flex-row text-slate-900">
@@ -55,9 +56,9 @@ export default function Contenido2() {
                         <tbody>
                             <tr className="bg-slate-100 border-b">
                                 <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">
-                                    <a href="/">
+                                    <p href="">
                                     1
-                                    </a> 
+                                    </p> 
                                 </th>
                                 <td className="py-4 px-6">
                                     HP
