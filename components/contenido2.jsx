@@ -69,7 +69,7 @@ export default function Contenido2() {
                                     UJI7890
                                 </td>
                                 <td className="py-4 px-6">
-                                <a href="#" className="font-medium text-blue-600 hover:underline">Ver</a>
+                                <p href="#" className="font-medium text-blue-600 hover:underline">Ver</p>
                                 </td>
                             </tr>
                             <tr className="bg-slate-100 border-b">
@@ -86,7 +86,7 @@ export default function Contenido2() {
                                     123EFB7
                                 </td>
                                 <td className="py-4 px-6">
-                                <a href="#" className="font-medium text-blue-600 hover:underline">Ver</a>
+                                <p href="#" className="font-medium text-blue-600 hover:underline">Ver</p>
                                 </td>
                             </tr>
                             <tr className="bg-slate-100 border-b">
@@ -103,7 +103,7 @@ export default function Contenido2() {
                                     7UI9O0P
                                 </td>
                                 <td className="py-4 px-6">
-                                <a href="#" className="font-medium text-blue-600 hover:underline">Ver</a>
+                                <p href="#" className="font-medium text-blue-600 hover:underline">Ver</p>
                                 </td>
                             </tr>
                             <tr className="bg-slate-100 border-b">
@@ -120,7 +120,7 @@ export default function Contenido2() {
                                     345TGH6
                                 </td>
                                 <td className="py-4 px-6">
-                                <a href="#" className="font-medium text-blue-600 hover:underline">Ver</a>
+                                <p href="#" className="font-medium text-blue-600 hover:underline">Ver</p>
                                 </td>
                             </tr>
                             <tr className="bg-slate-100 border-b">
@@ -137,7 +137,7 @@ export default function Contenido2() {
                                     7UJH546
                                 </td>
                                 <td className="py-4 px-6">
-                                <a href="#" className="font-medium text-blue-600 hover:underline">Ver</a>
+                                <p href="#" className="font-medium text-blue-600 hover:underline">Ver</p>
                                 </td>
                             </tr>
                             <tr className="bg-slate-100 border-b">
@@ -154,7 +154,7 @@ export default function Contenido2() {
                                     5T6Y8UI7
                                 </td>
                                 <td className="py-4 px-6">
-                                <a href="#" className="font-medium text-blue-600 hover:underline">Ver</a>
+                                <p href="#" className="font-medium text-blue-600 hover:underline">Ver</p>
                                 </td>
                             </tr>
                         </tbody>
