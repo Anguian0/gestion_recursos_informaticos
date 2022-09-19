@@ -3,7 +3,7 @@ export default function Cabecera() {
         <div className="bg-[#045FB4] h-28 lg:columns-3 xl:columns-3 2xl:columns-3 shadow-sm">
 
 
-            <img src="/logo_sep.png" className="w-72 ml-28 lg:ml-10 xl:ml-28 my-7 hidden lg:block xl:block 2xl:block" />
+            <img src="/logo_sep.png" className="w-72 ml-28 lg:ml-10 xl:ml-28 my-7 hidden lg:block xl:block 2xl:block" alt="logosep"/>
 
             {/* Barra superior responsive */}
             <div className="text-center text-[#FFFF66]">
@@ -11,7 +11,7 @@ export default function Cabecera() {
                 <h2 className="text-[#DEDECA] drop-shadow-2xl text-md lg:text-sm xl:text-lg 2xl:text-xl font-bold pb-7 2xl:pb-5">Instituto Tecnólogico de Tuxtepec</h2>
             </div>
 
-            <img src="/TecNM_logo.png" className="w-52 ml-10 pt-1 hidden lg:block xl:block 2xl:block" />
+            <img src="/TecNM_logo.png" className="w-52 ml-10 pt-1 hidden lg:block xl:block 2xl:block" alt="logotecnm" />
 
         </div>
     )

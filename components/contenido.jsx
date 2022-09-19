@@ -18,7 +18,7 @@ export default function Contenido() {
             <div className="grid grid-cols-1 m-6 gap-6 lg:mr-0">
 
                 <div className=" flex flex-col items-center bg-slate-300 rounded-lg lg:flex-row">
-                    <img src="/monitor.jpg" className="  object-cover rounded-t-lg w-full h-full md:w-56 md:rounded-none md:rounded-l-lg" />
+                    <img src="/monitor.jpg" className="  object-cover rounded-t-lg w-full h-full md:w-56 md:rounded-none md:rounded-l-lg" alt="imagenrecurso"/>
                     <div className="grid px-6 grid-cols-1 lg:grid-cols-2 my-6 gap-6 w-full">
                         <p className=" p-6 bg-gray-100 rounded-lg">
                             Nombre: Monitor
@@ -41,7 +41,7 @@ export default function Contenido() {
                 </div>
 
                 <div className=" rounded-lg p-6 flex flex-col items-center lg:flex-row bg-slate-300">
-                    <img className="rounded-lg  object-cover lg:w-44 w-full " src="/mouse.webp" />
+                    <img className="rounded-lg  object-cover lg:w-44 w-full " src="/mouse.webp" alt="imagenrecurso"/>
                     <div className="grid grid-cols-1 lg:grid-cols-2 my-6 mb-0 lg:my-0 lg:ml-6 gap-6 w-full">
                         <p className=" p-6 bg-gray-100 rounded-lg">
                             Nombre: Monitor

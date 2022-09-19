@@ -12,7 +12,7 @@ export default function Contenido2() {
             <div className="grid grid-cols-1 m-6 lg:mr-0 gap-6">
 
                 <div className=" flex flex-col items-center bg-slate-300 rounded-lg lg:flex-row text-slate-900">
-                    <img src="/monitor.jpg" className=" object-cover rounded-t-lg w-full h-full md:w-56 md:rounded-none md:rounded-l-lg" />
+                    <img src="/monitor.jpg" className=" object-cover rounded-t-lg w-full h-full md:w-56 md:rounded-none md:rounded-l-lg" alt="imagenrecurso"/>
                     <div className="grid px-6 grid-cols-1 lg:grid-cols-2 my-6 gap-6 w-full">
                         <p className=" p-6 bg-gray-100 rounded-lg">
                             Nombre: Monitor
@@ -24,7 +24,7 @@ export default function Contenido2() {
                             Encargado: Julio Aguilar Carmona
                         </p>
                         <Link href="dashboard">
-                            <p className=" p-6 bg-gray-100 rounded-lg  cursor-pointer">Regresar</p>
+                            <a className=" p-6 bg-gray-100 rounded-lg  cursor-pointer">Regresar</a>
                         </Link>
 
                     </div>
