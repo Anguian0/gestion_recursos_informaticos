@@ -1,17 +1,22 @@
+import Head from "next/head";
 import Link from "next/link";
 import Script from "next/script";
 
-export default function SideBar() {
+export default function Sidebar() {
   return (
     <>
-      <Script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js" />
+
+      <Head>
+        <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js" />
+      </Head>
+
 
       {/* Sidebar */}
-      <div id="mobile-menu-1" className="hidden lg:block bg-gray-100 rounded-br-lg">
-        <div className="text-center border-r border-gray-200 bg-slate-100 p-6 pt-4 w-64 lg:h-screen h-fit">
+      <div id="mobile-menu-1" className="hidden lg:block">
+        <div className="text-center bg-slate-300 p-6 pt-4 w-64 lg:m-6 h-fit rounded-lg text-gray-900">
           <div className="hidden lg:block">
-            <h2 className="pb-4">Menú</h2>
-            <hr className="border-gray-200" />
+            <h2 className="pb-4 text-lg font-bold">Menú</h2>
+            <hr className="border-slate-400" />
           </div>
           <ul className="pt-2">
             <li>
@@ -20,7 +25,7 @@ export default function SideBar() {
                 type="button"
                 aria-controls="dropdown-example"
                 data-collapse-toggle="dropdown-example"
-                className="my-4 flex py-2 justify-evenly hover:rounded-lg hover:bg-slate-300 cursor-pointer hover:shadow-lg"
+                className=" my-4 flex py-2 justify-evenly rounded-lg bg-gray-100 cursor-pointer"
               >
                 <svg
                   className="w-6 h-6"
@@ -54,32 +59,59 @@ export default function SideBar() {
               </bottom>
 
               <ul id="dropdown-example" className="hidden">
-                <li className="my-4 flex py-2 ml-8 justify-evenly hover:rounded-lg hover:bg-slate-300 cursor-pointer hover:shadow-lg">
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    ></path>
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"
-                    ></path>
-                  </svg>
-                  SC1
-                </li>
+                <Link href="/edificios/sc1">
+                  <li className=" my-4 flex py-2 ml-8 justify-evenly rounded-lg bg-gray-100 cursor-pointer">
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      ></path>
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"
+                      ></path>
+                    </svg>
+                    SC1
+                  </li>
+                </Link>
+                <Link href="/edificios/sc2">
+                  <li className=" my-4 flex py-2 ml-8 justify-evenly rounded-lg bg-gray-100 cursor-pointer">
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      ></path>
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"
+                      ></path>
+                    </svg>
+                    SC2
+                  </li>
+                </Link>
               </ul>
             </li>
-            <li className="my-4 flex py-2 justify-evenly hover:rounded-lg hover:bg-slate-300 cursor-pointer hover:shadow-lg">
+            <li className=" my-4 flex py-2 justify-evenly rounded-lg bg-gray-100 cursor-pointer">
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -110,7 +142,7 @@ export default function SideBar() {
                 ></path>
               </svg>
             </li>
-            <li className="my-4 flex py-2 justify-evenly hover:rounded-lg hover:bg-slate-300 cursor-pointer hover:shadow-lg">
+            <li className=" my-4 flex py-2 justify-evenly rounded-lg bg-gray-100 cursor-pointer">
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -141,7 +173,7 @@ export default function SideBar() {
                 ></path>
               </svg>
             </li>
-            <li className="my-4 flex py-2 justify-evenly hover:rounded-lg hover:bg-slate-300 cursor-pointer hover:shadow-lg">
+            <li className=" my-4 flex py-2 justify-evenly rounded-lg bg-gray-100 cursor-pointer">
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -172,7 +204,7 @@ export default function SideBar() {
                 ></path>
               </svg>
             </li>
-            <li className="my-4 flex py-2 justify-evenly hover:rounded-lg hover:bg-slate-300 cursor-pointer hover:shadow-lg">
+            <li className=" my-4 flex py-2 justify-evenly rounded-lg bg-gray-100  cursor-pointer">
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -203,7 +235,7 @@ export default function SideBar() {
                 ></path>
               </svg>
             </li>
-            <li className="my-4 flex py-2 justify-evenly hover:rounded-lg hover:bg-slate-300 cursor-pointer hover:shadow-lg">
+            <li className="my-4 flex py-2 justify-evenly rounded-lg bg-gray-100 cursor-pointer">
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -234,36 +266,35 @@ export default function SideBar() {
                 ></path>
               </svg>
             </li>
+            <li className="mt-16 rounded-lg flex py-2 justify-evenly bg-gray-100">
+              <Link href="/dashboard">
+                <img
+                  className="inline-block h-7  w-7 rounded-full ring-2 ring-slate-300 cursor-pointer"
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  alt=""
+                />
+              </Link>
+              <Link href="/dashboard">
+                <p className="self-center px-2 cursor-pointer">Julio C.</p>
+              </Link>
+              <Link href="/">
+                <svg
+                  className="w-6 h-6 self-center cursor-pointer"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                  ></path>
+                </svg>
+              </Link>
+            </li>
           </ul>
-        </div>
-
-        {/* Botón Usuario y regresar */}
-        <div
-          className="flex justify-evenly text-center relative bottom-5 lg:bottom-52 hover:bg-slate-300 m-6 py-2
-          px-5 rounded-lg hover:shadow-lg"
-        >
-          <img
-            className="inline-block h-7  w-7 rounded-full ring-2 ring-gray-100"
-            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-            alt=""
-          />
-          <p className="self-center px-8">Julio C.</p>
-          <Link href="/">
-            <svg
-              className="w-6 h-6 self-center cursor-pointer"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
-              ></path>
-            </svg>
-          </Link>
         </div>
       </div>
     </>

@@ -1,3 +1,4 @@
+// Al darle al botón ver en el contenido, muestra este contenido2
 import Link from "next/link";
 
 export default function Contenido2() {
@@ -5,34 +6,34 @@ export default function Contenido2() {
         <>
 
             <div>
-                <h1 className="border-2 border-slate-400 rounded-lg bg-slate-200 text-2xl p-2 mx-6 lg:mr-0 pt-1 text-center">Laboratorio SC1</h1>
+                <h1 className="rounded-lg text-slate-900 bg-slate-300 text-xl uppercase p-2 mx-6 lg:mr-0 px-6 text-center mt-4 lg:mt-0">Laboratorio SC1</h1>
             </div>
 
             <div className="grid grid-cols-1 m-6 lg:mr-0 gap-6">
 
-                <div className="border-2 border-slate-400 flex flex-col items-center bg-slate-200 rounded-lg lg:flex-row">
-                    <img src="/monitor.jpg" className="border-b-2 lg:border-b-0 lg:border-r-2 border-slate-400 object-cover rounded-t-lg w-full h-full md:w-56 md:rounded-none md:rounded-l-lg" />
+                <div className=" flex flex-col items-center bg-slate-300 rounded-lg lg:flex-row text-slate-900">
+                    <img src="/monitor.jpg" className=" object-cover rounded-t-lg w-full h-full md:w-56 md:rounded-none md:rounded-l-lg" />
                     <div className="grid px-6 grid-cols-1 lg:grid-cols-2 my-6 gap-6 w-full">
-                        <p className="border-2 border-slate-400 p-6 bg-gray-100 rounded-lg">
+                        <p className=" p-6 bg-gray-100 rounded-lg">
                             Nombre: Monitor
                         </p>
-                        <p className="border-2 border-slate-400 p-6 bg-gray-100 rounded-lg">
+                        <p className=" p-6 bg-gray-100 rounded-lg">
                             Cantidad: 10
                         </p>
-                        <p className="border-2 border-slate-400 p-6 bg-gray-100 rounded-lg">
+                        <p className=" p-6 bg-gray-100 rounded-lg">
                             Encargado: Julio Aguilar Carmona
                         </p>
                         <Link href="dashboard">
-                            <a className="border-2 border-slate-400 p-6 bg-gray-100 rounded-lg hover:bg-slate-300">Regresar</a>
+                            <p className=" p-6 bg-gray-100 rounded-lg  cursor-pointer">Regresar</p>
                         </Link>
 
                     </div>
                 </div>
 
 
-                <div className="overflow-x-auto relative rounded-lg border-2 mb-6 border-slate-400">
+                <div className="overflow-x-auto relative rounded-lg mb-6 border border-slate-300">
                     <table className="w-full text-center text-sm text-gray-500">
-                        <thead className="text-xs text-gray-700 uppercase  bg-slate-200">
+                        <thead className="text-xs text-gray-700 uppercase  bg-slate-300">
                             <tr>
                                 <th scope="col" className="py-3 px-6">
                                     No. Inventario
