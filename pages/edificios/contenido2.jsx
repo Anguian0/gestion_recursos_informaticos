@@ -1,9 +1,19 @@
 // Al darle al botón ver en el contenido, muestra este contenido2
 import Link from "next/link";
+import Layout from "../../components/layout";
+import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default function Contenido2() {
+
+    const router = useRouter()
+
     return (
-        <>
+        <Layout>
+
+            <Head>
+                <title>GRI</title>
+            </Head>
 
             <div>
                 <h1 className="rounded-lg text-slate-900 bg-slate-300 text-xl uppercase p-2 mx-6 lg:mr-0 px-6 text-center mt-4 lg:mt-0">Laboratorio SC1</h1>
@@ -24,10 +34,7 @@ export default function Contenido2() {
                         <p className=" p-6 bg-gray-100 rounded-lg">
                             Encargado: Julio Aguilar Carmona
                         </p>
-                        <Link href="dashboard">
-                            <a className=" p-6 bg-gray-100 rounded-lg  cursor-pointer">Regresar</a>
-                        </Link>
-
+                            <button type="button" onClick={() => router.back()} className=" p-6 bg-gray-100 rounded-lg  cursor-pointer text-start">Regresar</button>
                     </div>
                 </div>
 
@@ -165,6 +172,6 @@ export default function Contenido2() {
 
 
             </div>
-        </>
+        </Layout>
     );
 };

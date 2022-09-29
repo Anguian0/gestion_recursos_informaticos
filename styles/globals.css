@@ -8,3 +8,11 @@
         @apply bg-gray-100;
     }
 }
+
+.scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+body::-webkit-scrollbar {
+    display: none;
+  }

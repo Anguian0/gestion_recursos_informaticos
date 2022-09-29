@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Contenido from "/components/contenido.jsx"
-import Contenido2 from "/components/contenido2.jsx"
 import Layout from "../../components/layout";
 
 export default function Inicio() {
@@ -9,6 +8,7 @@ export default function Inicio() {
 
             <Head>
                 <title>GRI</title>
+                <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js" />
             </Head>
 
             <div>

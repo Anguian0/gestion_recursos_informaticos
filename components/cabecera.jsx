@@ -1,6 +1,6 @@
 export default function Cabecera() {
     return (
-        <div className="bg-[#045FB4] h-28 lg:columns-3 xl:columns-3 2xl:columns-3 shadow-sm">
+        <header className="bg-[#045FB4] h-28 lg:columns-3 xl:columns-3 2xl:columns-3 shadow-sm">
 
 
             <img src="/logo_sep.png" className="w-72 ml-28 lg:ml-10 xl:ml-28 my-7 hidden lg:block xl:block 2xl:block" alt="logosep"/>
@@ -13,6 +13,6 @@ export default function Cabecera() {
 
             <img src="/TecNM_logo.png" className="w-52 ml-10 pt-1 hidden lg:block xl:block 2xl:block" alt="logotecnm" />
 
-        </div>
+        </header>
     )
 };
