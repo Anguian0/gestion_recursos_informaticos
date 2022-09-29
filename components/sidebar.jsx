@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import Dropdown from "./dropdown";
 
 export default function Sidebar() {
   return (
@@ -324,7 +323,7 @@ export default function Sidebar() {
               </svg>
 
               Edificio E
-              
+
               <svg
                 className="w-6 h-6"
                 fill="none"
